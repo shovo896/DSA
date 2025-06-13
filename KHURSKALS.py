@@ -39,4 +39,6 @@ class graph:
         for u,v ,weight in result:
             parent("%d -%d :%d" %(u,v,weight))
 #  write a driver code and execute it now
+# alone boy shovo
+
 

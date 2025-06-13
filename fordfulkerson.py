@@ -43,3 +43,4 @@ g=Graph(graph)
 source=0
 sink = 5
 print("Max Flow :%d"%g.ford_fulkerson(source,sink))
+
