@@ -7,4 +7,16 @@ class CircularQueue:
        def enqueue(self,value):
               if(self.rear +1) % self.size == self.front:
                      print("Queue is full")
-                     return  
+                     return
+              if self.front == -1 :
+                     self.front=0 
+                     self.rear =(self.rear+1) % self.size 
+                     self.queue[self.rear]=value 
+
+       def dequeue(self):
+              if self.front == -1 :
+                     print("Queue is Empty")
+                     return 
+              removed =self.queue[self.front]
+
+"  
