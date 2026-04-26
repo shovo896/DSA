@@ -11,5 +11,10 @@ def shortest_period(n,sales,k):
                      current_sum -= sales[left]
                      left=left+1
 
+                     return -1 if min_length == float('inf') else min_length
+sales=[2,1,5,1,3,2]
+k=7 
+print(shortest_period(len(sales),sales,k))       
+
        
        
