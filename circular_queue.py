@@ -19,4 +19,22 @@ class CircularQueue:
                      return 
               removed =self.queue[self.front]
 
-"  
+              if self.front == self.rear :
+                     self.front = self.rear = -1
+              else:
+                     self.front=(self.front+1) % self.size 
+                     return removed 
+
+
+def display(self):
+       if self.front == -1:
+              print("Empty")
+              return 
+       i = self.front 
+       while True :
+              print(self.queue[i],end="")
+              if i == self.rear:
+                     break 
+              i = (i+1) % self.size 
+              print()
+
